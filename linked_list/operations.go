@@ -45,7 +45,7 @@ func (linkedList *LinkedList) Print() {
 	fmt.Printf("\n*** PRINT LIST STOP ***\n")
 }
 
-// insert node in font
+// insert node in front
 func (linkedList *LinkedList) Prepend(node **Node) {
 	(*node).next = linkedList.head
 	linkedList.head = *node
